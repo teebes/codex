@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "My first blog post",
+            "content": "First contents"
+        },
+        {
+            "id": 2,
+            "title": "My last blog post",
+            "content": "Last content"
+        }
+    ]
+}
