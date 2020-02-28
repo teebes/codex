@@ -1,14 +1,16 @@
 <template>
-  <div class='markdown-post'>
+  <div class="markdown-post">
     <h1>{{ title }}</h1>
-    <div class='summary'>{{ summary }}</div>
+    <div class="summary">{{ summary }}</div>
     <div class="author-and-posted flex">
-      <div class='author'>By <span class='author-name'>{{ author.username }}</span></div>
-      <div class='posted ml-8'>{{ posted_date }}</div>
+      <div class="author">
+        By <span class="author-name">{{ author.username }}</span>
+      </div>
+      <div class="separator mx-4">&mdash;</div>
+      <div class="posted">{{ posted_date }}</div>
     </div>
-    
-    
-    <div v-html="content_html" class='mt-12'>Post contents</div>
+
+    <div v-html="content_html" class="mt-12">Post contents</div>
   </div>
 </template>
 

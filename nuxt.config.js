@@ -54,7 +54,7 @@ export default async () => {
       [
         "@nuxtjs/google-analytics",
         {
-          id: "UA-129130800-2"
+          id: process.env.WR_BLOG_GA || ""
         }
       ]
     ],
