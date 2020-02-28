@@ -33,6 +33,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: $color-text;
 }
 
 *,
@@ -66,6 +67,14 @@ h2 {
 a:hover {
   color: $color-primary;
   text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 // Markdown formatting
@@ -115,6 +124,19 @@ a:hover {
     border: 1px solid black;
     border-radius: 2px;
     padding: 3px;
+  }
+
+  pre {
+    background: #333;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin-bottom: 1rem;
+
+    code {
+      background: none;
+      border: 0;
+    }
   }
 }
 </style>

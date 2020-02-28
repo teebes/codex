@@ -50,7 +50,13 @@ export default async () => {
      */
     buildModules: [
       // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-      "@nuxtjs/tailwindcss"
+      "@nuxtjs/tailwindcss",
+      [
+        "@nuxtjs/google-analytics",
+        {
+          id: "UA-129130800-2"
+        }
+      ]
     ],
     /*
      ** Nuxt.js modules

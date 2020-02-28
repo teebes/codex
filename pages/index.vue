@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h1 class='hidden'>Recent Posts</h1>
+    <h1 class="hidden">Recent Posts</h1>
 
-    <div v-for="post in posts" :key="post.id" class='mb-12'>
-      <h2 class='post-title'><nuxt-link :to="post.path">{{ post.title }}</nuxt-link></h2>
-      <div class='summary'>{{ post.summary }}</div>
+    <div v-for="post in posts" :key="post.id" class="mb-12">
+      <h2 class="post-title">
+        <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
+      </h2>
+      <div class="summary">{{ post.summary }}</div>
       <!-- <div class='by'>By Thibaud - {{ posted_date(post.created_ts) }}</div> -->
     </div>
   </div>
