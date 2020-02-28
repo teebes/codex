@@ -1,0 +1,27 @@
+$font-text: "Roboto Slab";
+$font-title: "Montserrat";
+
+@mixin font-text-regular {
+  font-family: $font-text, serif;
+  font-weight: 400;
+}
+
+@mixin font-text-light {
+  font-weight: 100;
+  font-family: $font-text, serif;
+}
+
+@mixin font-title {
+  font-family: $font-title, sans-serif;
+}
+
+.font-text-regular {
+  @include font-text-regular;
+}
+.font-text-light {
+  @include font-text-light;
+}
+
+.font-title {
+  @include font-title;
+}
