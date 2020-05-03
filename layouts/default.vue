@@ -64,6 +64,14 @@ h2 {
   color: $color-secondary;
 }
 
+h3 {
+  color: $color-text-hex-70;
+  @include font-title;
+  // text-transform: uppercase;
+  // font-weight: bold;
+  text-decoration: underline;
+}
+
 a:hover {
   color: $color-primary;
   text-decoration: underline;
