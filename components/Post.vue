@@ -10,7 +10,7 @@
       <div class="posted">{{ posted_date }}</div>
     </div>
 
-    <div v-html="content_html" class="mt-12">Post contents</div>
+    <div v-html="content_html" class="mt-12 mb-32">Post contents</div>
   </div>
 </template>
 
