@@ -26,9 +26,9 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.summary
-        }
-      ]
+          content: this.summary,
+        },
+      ],
     };
   },
   props: ["created_ts", "title", "content", "summary", "author"],
@@ -40,7 +40,7 @@ export default {
     var h1Removed = html.replace(/<h1.*>.*?<\/h1>/gi, "");
 
     return {
-      content_html: h1Removed
+      content_html: h1Removed,
     };
   },
   computed: {
@@ -50,7 +50,15 @@ export default {
       const ts = this.post_ts;
       const posted = new Date(Date.parse(ts)).toLocaleDateString();
       return posted;
-    }
-  }
+    },
+  },
 };
 </script>
+
+<style>
+code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+</style>
