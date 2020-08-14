@@ -4,7 +4,12 @@
     <div class="summary">{{ summary }}</div>
     <div class="author-and-posted flex">
       <div class="author">
-        By <span class="author-name">{{ author.username }}</span>
+        By 
+        <a href='https://twitter.com/teebesz' v-if="author.username === 'Thibaud'">
+          Thibaud
+        </a>
+        <span v-else class="author-name">{{ author.username }}</span>
+
       </div>
       <div class="separator mx-4">&mdash;</div>
       <div class="posted">{{ posted_date }}</div>
