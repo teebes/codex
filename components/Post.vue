@@ -25,6 +25,7 @@ import format_date from "@/utils/format_date.js";
 
 export default {
   head() {
+    const title = this.title;
     return {
       title: this.title,
       meta: [
@@ -33,6 +34,26 @@ export default {
           name: "description",
           content: this.summary,
         },
+        {
+          hid: "ogtitle",
+          name: "og:title",
+          content: title,
+        },
+        {
+          hid: "ogtype",
+          name: "og:type",
+          content: "article",
+        },
+        {
+          hid: "ogdescription",
+          name: "og:description",
+          content: this.summary,
+        },
+        // {
+        //   hid: "og-url",
+        //   name: "og:url"
+        //   content: "",
+        // }
       ],
     };
   },
