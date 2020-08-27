@@ -25,7 +25,8 @@ import format_date from "@/utils/format_date.js";
 
 export default {
   head() {
-    const title = this.title;
+    console.log(process.env.HOST);
+    console.log(process.env.PORT);
     return {
       title: this.title,
       meta: [
@@ -37,7 +38,7 @@ export default {
         {
           hid: "ogtitle",
           name: "og:title",
-          content: title,
+          content: this.title,
         },
         {
           hid: "ogtype",
@@ -49,15 +50,15 @@ export default {
           name: "og:description",
           content: this.summary,
         },
-        // {
-        //   hid: "og-url",
-        //   name: "og:url"
-        //   content: "",
-        // }
+        {
+          hid: "og-url",
+          name: "og:url",
+          content: `https://blog.writtenrelams.com${this.path}`,
+        },
       ],
     };
   },
-  props: ["created_ts", "title", "content", "summary", "author"],
+  props: ["created_ts", "title", "content", "summary", "author", "path"],
   data() {
     const raw_markdown = this.content;
     const html = new showdown.Converter().makeHtml(raw_markdown);

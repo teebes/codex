@@ -4,7 +4,8 @@
     :title="post.title" 
     :content="post.content" 
     :summary="post.summary" 
-    :author="post.author"/>
+    :author="post.author"
+    :path="post.path"/>
 </template>
 
 <script>
@@ -13,14 +14,14 @@ import Post from "@/components/Post.vue";
 
 export default {
   components: {
-    Post
+    Post,
   },
   async asyncData({ route }) {
     const path = route.path;
     const post = await BlogService.getPostByPath(path);
     return {
-      post: post
+      post: post,
     };
-  }
+  },
 };
 </script>
