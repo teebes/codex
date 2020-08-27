@@ -53,7 +53,7 @@ export default {
         {
           hid: "og-url",
           name: "og:url",
-          content: `https://blog.writtenrelams.com${this.path}`,
+          content: `https://blog.writtenrealms.com${this.path}`,
         },
       ],
     };
