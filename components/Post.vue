@@ -35,22 +35,22 @@ export default {
         },
         {
           hid: "ogtitle",
-          name: "og:title",
+          property: "og:title",
           content: this.title,
         },
         {
           hid: "ogtype",
-          name: "og:type",
+          property: "og:type",
           content: "article",
         },
         {
           hid: "ogdescription",
-          name: "og:description",
+          property: "og:description",
           content: this.summary,
         },
         {
           hid: "og-url",
-          name: "og:url",
+          property: "og:url",
           content: `https://blog.writtenrealms.com${this.path}`,
         },
         {
