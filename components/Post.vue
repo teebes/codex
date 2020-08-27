@@ -25,8 +25,6 @@ import format_date from "@/utils/format_date.js";
 
 export default {
   head() {
-    console.log(process.env.HOST);
-    console.log(process.env.PORT);
     return {
       title: this.title,
       meta: [
@@ -54,6 +52,31 @@ export default {
           hid: "og-url",
           name: "og:url",
           content: `https://blog.writtenrealms.com${this.path}`,
+        },
+        {
+          hid: "twitter-card",
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          hid: "twitter-site",
+          name: "twitter:site",
+          content: "@written_realms",
+        },
+        {
+          hid: "twitter-title",
+          name: "twitter:title",
+          content: this.title,
+        },
+        {
+          hid: "twitter-description",
+          name: "twitter:description",
+          content: this.summary,
+        },
+        {
+          hid: "twitter-creator",
+          name: "twitter:creator",
+          content: "@teebesz",
         },
       ],
     };
