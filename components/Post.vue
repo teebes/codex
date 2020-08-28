@@ -59,6 +59,11 @@ export default {
           content: "summary",
         },
         {
+          hid: "twitter-image",
+          name: "twitter:image",
+          content: "https://blog.writtenrealms.com/realms-banner-2000x2000.png",
+        },
+        {
           hid: "twitter-site",
           name: "twitter:site",
           content: "@written_realms",
