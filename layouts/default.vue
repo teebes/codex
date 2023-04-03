@@ -51,7 +51,20 @@ body {
 #contents {
   max-width: 850px;
   padding: 0 25px;
+
+  margin-top: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  #contents {
+    margin-top: 8rem;
+  }
+}
+
+#contents {
+  margin-left: auto;                                                                                                          
+  margin-right: auto;                                                                                                         
+}  
 
 h1 {
   color: $color-text-hex-80;
@@ -70,6 +83,11 @@ h3 {
   // text-transform: uppercase;
   // font-weight: bold;
   text-decoration: underline;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
 }
 
 a:hover {

@@ -30,6 +30,22 @@
     a:hover {
       text-decoration: none;
     }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media screen and (min-width: 768px) {
+  #site-title {
+    margin-left: 3rem;
   }
 }
 </style>

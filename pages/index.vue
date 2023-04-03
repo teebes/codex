@@ -35,6 +35,14 @@ export default {
 @import "@/assets/scss/colors";
 @import "@/assets/scss/fonts";
 
+.hidden {
+  display: none;
+}
+
+.mb-12 {
+  margin-bottom: 1.5rem;
+}
+
 h2.post-title {
   color: inherit;
   font-family: $font-title;
