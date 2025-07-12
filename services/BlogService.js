@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: `https://api.writtenrealms.com/api/v1/blog`,
+  baseURL: `https://writtenrealms.com/forge/api/v1/blog`,
+  // baseURL: `https://api.writtenrealms.com/api/v1/blog`,
   // baseURL: `http://localhost:8000/api/v1/blog`,
   headers: {
     Accept: "application/json",
