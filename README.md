@@ -1,8 +1,21 @@
-# codex
+# Codex
 
-> Written Realms blog
+Written Realms Blog Repo
 
-## Build Setup
+## Docker Setup
+
+docker build -t codex .
+
+docker run -p 8080:80 --rm codex
+
+
+## Kubernetes
+`kubectl apply -f k8s/deployment.yaml`
+`kubectl apply -f k8s/ingress.yaml`
+`kubectl apply -f k8s/service.yaml`
+
+
+## Local build
 
 ``` bash
 # install dependencies
